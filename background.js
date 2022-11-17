@@ -29,7 +29,6 @@ function reddenPage() {
   });
 
   items = document.querySelectorAll('body > link');
-  console.log(items);
   [].forEach.call(items, function(item) {
     if(item.href.includes("watermark")){
       item.remove();
