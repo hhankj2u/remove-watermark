@@ -1,4 +1,4 @@
-function reddenPage() {
+function removeWatermark() {
 /*  let item = document.querySelector("body > script:nth-child(2)");
   if(item && item.textContent.includes("watermark")){
     item.remove();
@@ -40,7 +40,7 @@ chrome.action.onClicked.addListener((tab) => {
   if(!tab.url.includes("chrome://")) {
     chrome.scripting.executeScript({
       target: { tabId: tab.id },
-      function: reddenPage
+      function: removeWatermark
     });
   }
 });
